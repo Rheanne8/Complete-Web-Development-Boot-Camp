@@ -1,0 +1,35 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+  /* inner and outer boxes share this box class and the 10px of padding is already applied here therefore there is no need to implement it in the inidividual box classes
+   */
+   /* Even though for all 3 divs, the background is set to blue, using the id #outer-box will override the blue  */
+
+}
+
+p {
+  color: yellow;
+  margin: 0;
+;
+}
+
+#outer-box {
+  /* instead of border: 10px solid purple; */
+ 
+  background-color: purple;
+}
+
+.inner-box {
+  background-color: red;
+  /* This rule has to be below the .box rule because they have the same levle of specificity i.e they are both selecting a class. Moving this above will not allow the box to be red */
+}
+
+.white-text{
+  color: white
+}
+
+.div{
+  padding: 10px; 
+}

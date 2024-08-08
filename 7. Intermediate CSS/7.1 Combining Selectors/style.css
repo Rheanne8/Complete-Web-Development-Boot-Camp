@@ -1,0 +1,25 @@
+/* Write your code here: */
+h1, h2 {
+    color: blueviolet;
+}
+
+.box > p {
+    color: firebrick; 
+}
+
+/* below will not work if we use .box > li because li is 2 levels deep relative to the div calss=box */
+.box li {
+    color: blue; 
+}
+
+
+/* cannot use a chained selector where class comes first i.e .doneli as there it will be interpreted as
+you are trying to find a class called doneli */
+li.done{
+    color:seagreen; 
+}
+
+
+ul p.done{
+    font-size: 0.5rem;
+}
